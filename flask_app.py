@@ -15,5 +15,9 @@ def home():
 def about():
     return render_template('about.html')
 
+@app.route('/articles')
+def articles():
+    return render_template('articles.html')
+
 #if __name__ == "__main__":
 #    app.run()
