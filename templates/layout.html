@@ -4,13 +4,21 @@
     <head>
         <title>My First Flask App</title>
         <meta charset = "utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes>
+        <meta name="description" content="Standard Site">
+        <meta name="author" content="Sean Rattigan">
         <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' />
 
     </head>
 
     <body>
-        {% block body %}
-        {% endblock %}
+
+        <div class = "container">
+            {% include '_nav.html' %}
+            {% block body %}
+            {% endblock %}
+        </div>
+
         <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js'></script>
     </body>
 </html>
