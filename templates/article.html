@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>Article {{id}}</h1>
+
+<div class="card">
+  <h5 class="card-header">{{title}}... ta daaaaa...</h5>
+  <div class="card-body">
+    <i class="card-title">{{author}}, {{create_date}}</i>
+    <p class="card-text">{{art_body}}With supporting text below as a natural lead-in to additional content.</p>
+    <a href="/articles" class="btn btn-primary">Go back</a>
+  </div>
+</div>
+
+
+{% endblock %}
